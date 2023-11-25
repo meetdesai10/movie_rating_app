@@ -36,6 +36,7 @@ export default function Home() {
         {popularMovies.map((movie) => {
           return (
             <Link
+            key={movie.id}
               style={{ textDecoration: "none", color: "white" }}
               to={`/movie/${movie.id}`}
             >

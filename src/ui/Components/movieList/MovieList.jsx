@@ -35,7 +35,7 @@ export default function MovieList() {
       </h2>
       <div className="listCard">
         {movieList.map((movie) => {
-          return <Card movie={movie} />;
+          return <Card key={movie.id} movie={movie} />;
         })}
       </div>
     </MovieListDynamic>
