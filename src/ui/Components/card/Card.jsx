@@ -89,8 +89,6 @@ const CardContainer = styled.div`
     position: relative;
     transition: 0.1s all ease-in-out;
     &:hover {
-      transform: scale(1.1);
-      z-index: 1000;
       .cards_overlay {
         opacity: 1;
       }
