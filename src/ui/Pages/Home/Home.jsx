@@ -32,6 +32,7 @@ export default function Home() {
         infiniteLoop={true}
         showStatus={false}
         showIndicators={false}
+        swipeable={false}
       >
         {popularMovies.map((movie) => {
           return (
