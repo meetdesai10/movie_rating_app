@@ -3,6 +3,8 @@ import styled from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
+import Card from "../../Components/card/Card";
+import MovieList from "../../Components/movieList/MovieList";
 export default function Home() {
   const [popularMovies, setPopularMovies] = useState([]);
   useEffect(() => {
@@ -93,6 +95,7 @@ export default function Home() {
           );
         })}
       </Carousel>
+      <MovieList />
     </HomeContainer>
   );
 }

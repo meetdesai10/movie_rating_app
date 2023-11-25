@@ -88,6 +88,8 @@ const HeaderContainer = styled.div`
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 2;
+  background-color: black;
   @media (max-width: 576px) {
     padding: 10px 2px;
     }
