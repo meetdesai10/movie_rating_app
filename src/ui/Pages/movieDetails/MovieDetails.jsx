@@ -27,7 +27,7 @@ export default function MovieDetails() {
           src={`https://image.tmdb.org/t/p/original${
             currentMovieDetails.backdrop_path != null
               ? currentMovieDetails.backdrop_path
-              : "/5mzr6JZbrqnqD8rCEvPhuCE5Fw2.jpg"
+              : ""
           }`}
           alt=""
         />
