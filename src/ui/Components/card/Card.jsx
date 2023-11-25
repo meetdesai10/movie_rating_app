@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 import { Link } from "react-router-dom";
 export default function Card({ movie }) {
-  const [isLoading, setIsoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      setIsoading(false);
-    }, 1500);
+      setIsLoading(false);
+    }, 1000);
   }, []);
   return (
     <CardContainer>
       {isLoading ? (
         <div className="cards">
-          <SkeletonTheme color="#202020" highlightColor="#444">
-            <Skeleton height={300} duration={2} />
+          <SkeletonTheme baseColor="#202020" highlightColor="#444">
+            <Skeleton height={290} width={220} duration={2} />
           </SkeletonTheme>
         </div>
       ) : (

@@ -27,7 +27,12 @@ export default function MovieList() {
   }
   return (
     <MovieListDynamic>
-      <h2 className="listTitle">{(type ? type : "popular").toUpperCase()}</h2>
+      <h2 className="listTitle">
+        {(type
+          ? type + " " + "Movies"
+          : "popular" + " " + "Movies"
+        ).toUpperCase()}
+      </h2>
       <div className="listCard">
         {movieList.map((movie) => {
           return <Card movie={movie} />;
@@ -37,12 +42,12 @@ export default function MovieList() {
   );
 }
 const MovieListDynamic = styled.div`
-margin-top: 30px;
+  margin-top: 30px;
   .listTitle {
-    margin-left: 130px;
+    margin-left: 100px;
     @media (max-width: 768px) {
       margin-left: 10px;
-     font-size: 18px;
+      font-size: 18px;
     }
   }
   .listCard {
