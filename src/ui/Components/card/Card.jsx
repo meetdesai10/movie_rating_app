@@ -93,7 +93,7 @@ const CardContainer = styled.div`
         opacity: 1;
       }
       img {
-        filter: brightness(70%);
+        filter: brightness(50%);
       }
     }
     img {
